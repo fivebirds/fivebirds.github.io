@@ -1,8 +1,11 @@
 name: Deploy to GitHub Pages
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
+    paths:
+      - '/app/*'
 
 jobs:
   deploy:
@@ -13,6 +16,7 @@ jobs:
         with:
           node-version: 18
 
+      - run: cd app
       - run: npm install
       - run: npm run build
 
