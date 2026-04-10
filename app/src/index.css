@@ -1,0 +1,84 @@
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--white);
+  font-family: 'Crimson Pro', serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Grain texture overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.035;
+}
+
+/* Gold rule */
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-44), var(--gold), var(--gold-44), transparent);
+  border: none;
+}
+
+/* Fade up on scroll */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ibis golden pulse */
+@keyframes goldenPulse {
+  0%, 100% { filter: drop-shadow(0 0 10px var(--gold)) drop-shadow(0 0 28px var(--gold-66)); }
+  50%       { filter: drop-shadow(0 0 22px var(--white)) drop-shadow(0 0 55px var(--gold-88)); }
+}
+.ibis-glow { animation: goldenPulse 3s ease-in-out infinite; }
+
+/* Shadow bird shimmer on hover */
+.shadow-bird {
+  opacity: 0.22;
+  filter: brightness(0.35) saturate(0.2);
+  transition: opacity 0.5s ease, filter 0.5s ease;
+}
+.shadow-bird:hover {
+  opacity: 0.38;
+  filter: brightness(0.55) saturate(0.4);
+}
+
+/* Pipeline step reveal */
+.pipeline-step {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.pipeline-step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--gold-44); border-radius: 2px; }

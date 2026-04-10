@@ -1,0 +1,66 @@
+:root {
+  /* ── Backgrounds ──────────────────────────────── */
+  --bg:              #030508;   /* deep space black   */
+  --surface:         #080d18;   /* dark navy surface  */
+  --surface-2:       #05090f;   /* deeper dark panel  */
+  --surface-3:       #05080e;   /* shadow card bg     */
+  --surface-apoc:    #0f0508;   /* apocalypse dark    */
+  --surface-apoc-2:  #180510;   /* apocalypse gradient end */
+  --surface-adv:     #0a060a;   /* adversarial card   */
+
+  /* ── Borders & UI chrome ─────────────────────── */
+  --border:          #1a2030;
+  --border-dim:      #2a3040;
+  --text-dim:        #1e2535;
+
+  /* ── Brand ───────────────────────────────────── */
+  --gold:            #C9A84C;
+  --white:           #FFFFFF;
+
+  /* ── Accents ─────────────────────────────────── */
+  --cyan:            #00C8FF;
+  --green:           #00FF9D;
+  --red:             #FF4060;
+  --purple:          #A78BFA;
+
+  /* ── Text ────────────────────────────────────── */
+  --text-muted:      #4A5568;
+
+  /* ── Gold alpha variants ─────────────────────── */
+  --gold-08:         #C9A84C08;
+  --gold-11:         #C9A84C11;
+  --gold-15:         #C9A84C15;
+  --gold-18:         #C9A84C18;
+  --gold-22:         #C9A84C22;
+  --gold-25:         #C9A84C25;
+  --gold-33:         #C9A84C33;
+  --gold-44:         #C9A84C44;
+  --gold-55:         #C9A84C55;
+  --gold-66:         #C9A84C66;
+  --gold-77:         #C9A84C77;
+  --gold-88:         #C9A84C88;
+
+  /* ── Cyan alpha variants ─────────────────────── */
+  --cyan-06:         #00C8FF06;
+  --cyan-15:         #00C8FF15;
+  --cyan-22:         #00C8FF22;
+  --cyan-44:         #00C8FF44;
+
+  /* ── Green alpha variants ────────────────────── */
+  --green-15:        #00FF9D15;
+  --green-22:        #00FF9D22;
+  --green-44:        #00FF9D44;
+
+  /* ── Red alpha variants ──────────────────────── */
+  --red-10:          #FF406010;
+  --red-22:          #FF406022;
+  --red-33:          #FF406033;
+
+  /* ── Purple alpha variants ───────────────────── */
+  --purple-06:       #A78BFA06;
+  --purple-0a:       #A78BFA0A;
+  --purple-11:       #A78BFA11;
+  --purple-22:       #A78BFA22;
+  --purple-33:       #A78BFA33;
+  --purple-44:       #A78BFA44;
+}
