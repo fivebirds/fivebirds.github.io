@@ -1,0 +1,3 @@
+[submodule "ibis-app"]
+	path = ibis-app
+	url = https://github.com/fivebirds/ibis.fivebirds.github.io.git
