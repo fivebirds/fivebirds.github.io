@@ -864,6 +864,14 @@ cd ibis && python load_archive.py
             Apache 2.0 — Open source forever.<br />
             Fork it. Mirror it. Keep it alive.
           </div>
+
+          <div style={{
+            fontFamily: 'IBM Plex Mono', fontSize: 10,
+            color: 'var(--text-muted)', opacity: 0.35,
+            marginTop: 36, letterSpacing: '0.06em',
+          }}>
+            Marimuthu Kaliraj — April 2026
+          </div>
         </footer>
 
       </div>
